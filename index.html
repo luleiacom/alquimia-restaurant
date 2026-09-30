@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alquimia | Botica & Coctelería de Autor</title>
+    
+    <!-- Tailwind CSS Play CDN con la configuración de colores de Alquimia -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'esmeralda-dark': '#0B1F1A',
+                        'oro-old': '#D4AF37',
+                        'crema-soft': '#F5F2EB',
+                        'bronce': '#B8860B',
+                    },
+                    fontFamily: {
+                        'titulo': ['Cinzel', 'serif'],
+                        'cuerpo': ['Cormorant Garamond', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Cinzel & Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body class="bg-esmeralda-dark text-crema-soft font-cuerpo selection:bg-oro-old selection:text-esmeralda-dark m-0 p-0 overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
